@@ -9,36 +9,36 @@
   </head>
   <body>
   <div id="flip">
-  <p>Click here to show or hide gallery!</p></div>
+  <p>Click <span style="color: #F78B6D">here</span> to show or hide gallery!</p></div>
 <div class="slideshowbody">
   <div class="currentSlide">
   <div class="fade">
-    <img src="1.jpg"style="width:100%">
-    <div class="text">Caption Text</div>
+    <img src="1.jpg" alt="car" style="width:100%">
+    <div class="text">2004 Jeep Grand Cherokee <a href="carinfo">Learn more</a></div>
   </div>
 </div>
   <div class="currentSlide">
   <div class="fade">
-    <img src="2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+    <img src="2.jpg" alt="car" style="width:100%">
+    <div class="text">2003 Honda Civic <a href="carinfo">Learn more</a></div>
   </div>
 </div>
   <div class="currentSlide">
   <div class="fade">
-    <img src="3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <img src="3.jpg" alt="car" style="width:100%">
+    <div class="text">2006 Ford Focus <a href="carinfo">Learn more</a></div>
   </div>
 </div>
   <div class="currentSlide">
   <div class="fade">
-    <img src="4.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <img src="4.jpg" alt="car" style="width:100%">
+    <div class="text">2009 Toyota Avalon Sedan <a href="carinfo">Learn more</a></div>
   </div>
 </div>
   <div class="currentSlide">
   <div class="fade">
-    <img src="3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <img src="5.jpg" alt="car" style="width:100%">
+    <div class="text">2009 Chevrolet Trax <a href="carinfo">Learn more</a></div>
   </div>
 </div>
   <a class="prev" onclick="plusSlides(-1)"></a>
@@ -52,6 +52,73 @@
       <span class="dot" onclick="currentSlide(5)"></span> 
 </div>
 </div>
+
+<main id="content">
+  <section class="carinfo">
+    <h1 class="jeep">2004 Jeep Grand Cherokee</h1>
+    <ul>
+    <li>Maintanence needed:
+      <ul>
+        <li>Oil change: 3000 miles or every year 6 months</li>
+        <li>Tune up: Every 60000 miles</li>
+        <li>Brakes and tires: Every 40000 miles</li>
+      </ul>
+    </li>
+    </ul>
+  </section>
+  
+  <section class="carinfo">
+    <h1 class="honda">2003 Honda Civic</h1>
+    <ul>
+    <li>Maintanence needed:
+      <ul>
+        <li>Oil change: 4000 miles or every year 6 months</li>
+        <li>Tune up: Every 40000 miles</li>
+        <li>Brakes and tires: Every 20000 miles</li>
+      </ul>
+    </li>
+    </ul>
+  </section>
+  
+  <section class="carinfo">
+    <h1 class="ford">2006 Ford Focus</h1>
+    <ul>
+    <li>Maintanence needed:
+      <ul>
+        <li>Oil change: 5000 miles or every year 6 months</li>
+        <li>Tune up: Every 50000 miles</li>
+        <li>Brakes and tires: Every 20000 miles</li>
+      </ul>
+    </li>
+    </ul>
+  </section>
+  
+  <section class="carinfo">
+    <h1 class="toyota">2009 Toyota Avalon Sedan</h1>
+    <ul>
+    <li>Maintanence needed:
+      <ul>
+        <li>Oil change: 5000 miles or every year 6 months</li>
+        <li>Tune up: Every 20000 miles</li>
+        <li>Brakes and tires: Every 20000 miles</li>
+      </ul>
+    </li>
+    </ul>
+  </section>
+  
+  <section class="carinfo">
+    <h1 class="chevrolet">2009 Chevrolet Trax</h1>
+    <ul>
+    <li>Maintanence needed:
+      <ul>
+        <li>Oil change: 5000 miles or every year 6 months</li>
+        <li>Tune up: Every 20000 miles</li>
+        <li>Brakes and tires: Every 20000 miles</li>
+      </ul>
+    </li>
+    </ul>
+  </section>
+</main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="site.js"></script>
 </body>
