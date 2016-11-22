@@ -2,12 +2,8 @@
 
 Primary strength
 
+Jingwen Yu:
 My strength is to finish things on time.
 
-Good job
-
-lalaa
-
-cd
-
-ddddd
+Wenzhao Zhang:
+My strength is to utilize what I've learned to build things on it.
