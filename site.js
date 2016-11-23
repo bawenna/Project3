@@ -34,3 +34,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " activation";
 }
+
+function formFunction() {
+    if (confirm("Press Yes if you want to send this to us") == true) {
+        window.confirm("You submission has been sent successfully!");
+    } else {
+        window.alert("You pressed Cancel :C");
+    }
+    formFunction.preventDefault();
+}
