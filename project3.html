@@ -121,6 +121,34 @@
     </ul>
   </section>
 </main>
+
+<form id="contact" method="get" action="#null">
+  <label>Contact Us</label>
+  <div>
+    <label for="name">Your name:</label>
+    <input type="text">
+   </div>
+
+  <div>
+    <label for="select-choice">What are you looking for?</label>
+    <select name="select-choice" id="select-choice">
+      <option value="Choice1">Buying a car</option>
+      <option value="Choice2">Maintanence service</option>
+      <option value="Choice3">Partnership</option>
+      <option value="Choice4">Others</option>
+    </select>
+  </div>
+	
+  <div>
+    <label for="textarea">Details:</label>
+    <textarea cols="50" rows="6" id="textarea"></textarea>
+  </div>
+  
+  <div>
+    <button onclick="formFunction()"><input type="submit" value="Submit Now"></button>
+  </div>
+</form>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="site.js"></script>
 </body>
