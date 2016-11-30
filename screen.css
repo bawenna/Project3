@@ -6,59 +6,114 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable*/
 
+/* Base style */
 
-/* Slideshow container */
-.slideshowbody{
-  max-width: 75%;
-  position:relative;
-  margin: auto;
-  padding-top:2em;
+html {
+  font-size: 1.125em; 
+  line-height: 1.444em; 
+  font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 20px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom:10px;
+h1 {
+  font-size: 1.9375em; /* 34.875 / 18 */
+  text-align: left;
+  padding: 1.1em;
+}
+
+p{
+  font-size:16px;
+  line-height:30px;
+}
+
+/* Modular style */
+
+#contact{
+  font-size: 18px;
+  padding: 15%;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0.55em;
+  padding-right: 0.55em;
+  padding-bottom: 0.55em;
+}
+
+/* Layout style */
+html{
+  background: #85C1E9;
+  background-size:cover;
+  background-size:auto;
+}
+
+header{
+  background: url(car.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 100%;
   width: 100%;
 }
 
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 1vw;
-  width: 1vw;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 100%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+#brand{
+  background-color:#7D7D7D;
+  padding:10px;
+  text-align:center;
+  color:#FFF;
 }
 
-#flip{
-  cursor:pointer;
+#dropdown{
+  
+  background-color: #C8C8C8;
+  border:1px solid #000000;
+  border-top: 0em solid #999;
 }
 
-.activation, .dot:hover {
-  background-color: green;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
-  animation-name: fade;
-  animation-duration: 2s;
-}
-/*Transparent effect */
-@-webkit-keyframes fade {
-  from {opacity: 0.5} 
-  to {opacity: 1}
+#dropdown a{
+  color:#FFF;
+  text-decoration: none;
 }
 
-@keyframes fade {
-  from {opacity: 0.5} 
-  to {opacity: 1}
+#dropdown_container div{
+  margin-bottom:3px;
+  padding-left:6px;
+}
+
+#dropdown_container div:hover{
+  background-color: lightblue;
+}
+
+.box {
+    border: 5px solid #333;
+    overflow: auto;
+    background-color: #EBF5FB;
+}
+.imgs {
+    float: right;
+}
+.imgs img {
+    display: block;
+    width:100%;
+}
+.maincontent {
+  font-size:125%;
+}
+.title {
+    font-weight: bold;
+    font-size: 200%;
+    padding: 9px;
+    background: #ccc;
+}
+
+#contact{
+  background: url(contact.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-size: 75%;
+  text-align:center;
+  background-position:center;
+}
+
+#contact background{
+  text-align:center;
 }
