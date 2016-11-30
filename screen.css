@@ -45,10 +45,19 @@ html{
   background-size:auto;
 }
 
+header{
+  background: url(car.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
 .box {
     border: 5px solid #333;
     overflow: auto;
-      background-color: #EBF5FB;
+    background-color: #EBF5FB;
 }
 .imgs {
     float: right;
