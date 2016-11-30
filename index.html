@@ -12,73 +12,42 @@
     <h1> Car Maintanence Services</h1>
     <img src="car.jpg" alt="back" style="width:100%">
   </header>
-  <div id="flip">
-  <p>Click <span style="color: #F78B6D">here</span> to show or hide gallery!</p></div>
-
-  <div class="slideshowbody">
-  <div class="currentSlide">
-  <div class="fade">
-    <img src="1.jpg" alt="car">
-    <div class="text">2004 Jeep Grand Cherokee <a href="project3.html#jeep">Learn more</a></div>
-  </div>
-</div>
-  <div class="currentSlide">
-  <div class="fade">
-    <img src="2.jpg" alt="car">
-    <div class="text">2003 Honda Civic <a href="project3.html#honda">Learn more</a></div>
-  </div>
-</div>
-  <div class="currentSlide">
-  <div class="fade">
-    <img src="3.jpg" alt="car">
-    <div class="text">2006 Ford Focus <a href="project3.html#ford">Learn more</a></div>
-  </div>
-</div>
-  <div class="currentSlide">
-  <div class="fade">
-    <img src="4.jpg" alt="car">
-    <div class="text">2009 Toyota Avalon Sedan <a href="project3.html#toyota">Learn more</a></div>
-  </div>
-</div>
-  <div class="currentSlide">
-  <div class="fade">
-    <img src="5.jpg" alt="car">
-    <div class="text">2009 Chevrolet Trax <a href="project3.html#chev">Learn more</a></div>
-  </div>
-</div>
-  <div class="currentSlide">
-  <div class="fade">
-    <img src="6.jpg" alt="car">
-    <div class="text">2014 FIAT 500L <a href="project3.html#fiat">Learn more</a></div>
-  </div>
-</div>
-  <div class="currentSlide">
-  <div class="fade">
-    <img src="7.jpg" alt="car">
-    <div class="text">2015 Infiniti Q40 Sedan <a href="project3.html#infi">Learn more</a></div>
-  </div>
-</div>
-  <div class="currentSlide">
-  <div class="fade">
-    <img src="8.jpg" alt="car">
-    <div class="text">2014 Lexus LX 570 <a href="project3.html#lexus">Learn more</a></div>
-  </div>
-</div>
-  <a class="prev" onclick="plusSlides(-1)"></a>
-  <a class="next" onclick="plusSlides(1)"></a>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-</div>
-</div>
-
+  
+   <div id="brand">Select Car</div>
+   <div id="dropdown">
+    <div>
+     <a href="index.html#honda">2003 Honda Civic</a>
+    </div>
+    <div>
+     <a href="index.html#jeep">2004 Jeep Grand Cherokee</a>
+    </div>
+    <div>
+     <a href="index.html#ford">2006 Ford Focus</a>
+    </div>
+    <div>
+     <a href="index.html#toyota">2009 Toyota Avalon Sedan</a>
+    </div>
+    <div>
+     <a href="index.html#chev">2009 Chevrolet Trax</a>
+    </div>
+    <div>
+     <a href="index.html#fiat">2014 FIAT 500L</a>
+    </div>
+    <div>
+     <a href="index.html#lexus">2014 Lexus LX 570</a>
+    </div>
+    <div>
+     <a href="index.html#infi">2015 Infiniti Q40 Sedan</a>
+    </div>
+   </div>
+    <article>
+      <p>Having trouble to find your desire car? Enter your zip code to find auto shop around you</p>
+       <form id="zipform" name="zipform" method="get" action="#null">
+         <label for="zipcode">Zip code:</label>
+         <input type="text" id="zipcode" name="zipcode" />
+         <input type="submit" id="submit" name="submit" value="Search" />
+       </form> 
+    </article>
 <main id="content">
   <section class="carinfo">
   <div class = "box">
