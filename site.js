@@ -9,13 +9,9 @@ $(document).ready(function() {
         lat = Math.round(data.lat);
         lng = Math.round(data.lng);
         $('#print').append(
-        document.createTextNode(
-"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=find+auto+shop+around+you&rflfq=1&rlha=0&rllag=+" + lat + "," +lng +"&tbm=lcl&tbs=lf:1,lf_ui:2,lf_pqs:EAE")
-    );
-        document.write("https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1");
-        document.write("Click here to open in Google Maps");
-        document.write("</a>");
-      });
+        document.createTextNode("https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1")
+      );
+        });
       event.preventDefault();
   });
 });
