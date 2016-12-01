@@ -8,7 +8,7 @@ $(document).ready(function() {
       function (data) {
         lat = Math.round(data.lat);
         lng = Math.round(data.lng);
-        $('#print').append(
+        $('#link').append(
         document.createTextNode("https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1")
       );
         });
