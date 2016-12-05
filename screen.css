@@ -38,7 +38,6 @@ ul {
   padding-right: 0.55em;
   padding-bottom: 0.55em;
 }
-
 /* Layout style */
 html{
   background: #85C1E9;
@@ -53,34 +52,6 @@ header{
   text-align: center;
   height: 100%;
   width: 100%;
-}
-
-#brand{
-  background-color:#7D7D7D;
-  padding:10px;
-  text-align:center;
-  color:#FFF;
-}
-
-#dropdown{
-  
-  background-color: #C8C8C8;
-  border:1px solid #000000;
-  border-top: 0em solid #999;
-}
-
-#dropdown a{
-  color:#FFF;
-  text-decoration: none;
-}
-
-#dropdown_container div{
-  margin-bottom:3px;
-  padding-left:6px;
-}
-
-#dropdown_container div:hover{
-  background-color: lightblue;
 }
 
 .box {
@@ -116,4 +87,61 @@ header{
 
 #contact background{
   text-align:center;
+}
+
+/* Slideshow container */
+.slideshowbody{
+  max-width: 75%;
+  position:relative;
+  margin: auto;
+  padding-top:2em;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  position: absolute;
+  width: 100%;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 1vw;
+  width: 1vw;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#flip{
+  cursor:pointer;
+}
+
+.activation, .dot:hover {
+  background-color: green;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+.fade img{
+  width:100%;
+}
+/*Transparent effect */
+@-webkit-keyframes fade {
+  from {opacity: 0.5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.5} 
+  to {opacity: 1}
 }

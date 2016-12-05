@@ -3,19 +3,17 @@ $(document).ready(function() {
     var loc = $('#zipcode').val();
     var lat;
     var lng;
+    var x;
     $.get(
       'https://www.zipcodeapi.com/rest/js-rTyMicsfWrUvifDkyeNHgt1EysudYy0pszcKLFZH6Udp9QJI5wqlZs0yUuMS3Niw/info.json/'+loc+'/degrees',
       function (data) {
-        lat = Math.round(data.lat);
-        lng = Math.round(data.lng);
-        $('#print').append(
-        document.createTextNode(
-"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=find+auto+shop+around+you&rflfq=1&rlha=0&rllag=+" + lat + "," +lng +"&tbm=lcl&tbs=lf:1,lf_ui:2,lf_pqs:EAE")
-    );
-        document.write("<a href=\"https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=find+auto+shop+around+you&rflfq=1&rlha=0&rllag=+" + lat + "," +lng +"&tbm=lcl&tbs=lf:1,lf_ui:2,lf_pqs:EAE\">");
-        document.write("Your Title");
-        document.write("</a>");
-      });
+        lat = data.lat;
+        lng = data.lnt;
+        x = "https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1";
+        $('#link').append(
+        x
+      );
+        });
       event.preventDefault();
   });
 });
