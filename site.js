@@ -7,14 +7,14 @@ $(document).ready(function() {
     $.get(
       'https://www.zipcodeapi.com/rest/js-rTyMicsfWrUvifDkyeNHgt1EysudYy0pszcKLFZH6Udp9QJI5wqlZs0yUuMS3Niw/info.json/'+loc+'/degrees',
       function (data) {
-        lat = data.lat;
-        lng = data.lnt;
+        lat = Math.round(data.lat);
+        lng = Math.round(data.lnt);
         xy = "https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1";
         $('#link').append(
         document.createTextNode("https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1")
         );
         document.write("<a href=\"https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1\">");
-        document.write("Click here to leave our site and proceed to google maps!");
+        document.write("Click here to leave our site and proceed to google maps!" + " " + xy);
         document.write("</a>");
         });
         event.preventDefault();
