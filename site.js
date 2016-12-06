@@ -3,24 +3,29 @@ $(document).ready(function() {
     var loc = $('#zipcode').val();
     var lat;
     var lng;
+    var xy;
     $.get(
       'https://www.zipcodeapi.com/rest/js-rTyMicsfWrUvifDkyeNHgt1EysudYy0pszcKLFZH6Udp9QJI5wqlZs0yUuMS3Niw/info.json/'+loc+'/degrees',
       function (data) {
-        lat = Math.round(data.lat);
-        lng = Math.round(data.lng);
+        lat = data.lat;
+        lng = data.lnt;
+        xy = "https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1";
         $('#link').append(
         document.createTextNode("https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1")
-      );
+        );
+        document.write("<a href=\"https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1\">");
+        document.write("Click here to leave our site and proceed to google maps!");
+        document.write("</a>");
         });
-      event.preventDefault();
+        event.preventDefault();
   });
 });
 
 $(document).ready(function(){
-  $("#brand").mouseenter(function(){
+  $("#brand").click(function(){
     $("#dropdown").slideDown();
   });
-  $("#dropdown").mouseleave(function(){
+ $("#dropdown").mousemove(function(){
     $("#dropdown").slideUp();
   });
 });
