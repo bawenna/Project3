@@ -8,7 +8,7 @@ $(document).ready(function() {
       'https://www.zipcodeapi.com/rest/js-rTyMicsfWrUvifDkyeNHgt1EysudYy0pszcKLFZH6Udp9QJI5wqlZs0yUuMS3Niw/info.json/'+loc+'/degrees',
       function (data) {
         lat = Math.round(data.lat);
-        lng = Math.round(data.lnt);
+        lng = Math.round(data.lng);
         xy = "https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1";
         $('#link').append(
         document.createTextNode("https://www.google.com/maps/search/auto+shop/@" + lat +"," + lng +",11z/data=!3m1!4b1")
