@@ -9,29 +9,30 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Base style */
 
 html {
-  font-size: 1.125em; 
-  line-height: 1.444em; 
+  font-size: 1.125em;
+  line-height: 1.444em;
   font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
 }
 
 h1 {
-  font-size: 1.9375em; /* 34.875 / 18 */
+  font-size: 1.9375em;/* 34.875 / 18 */
   text-align: left;
   padding: 1.1em;
 }
 
-p{
-  font-size:16px;
-  line-height:30px;
+footer {
+  text-align: center;
 }
-
+#brand {
+  padding-left: 0.55em;
+}
+#dropdown {
+  padding-left: 1.1em;
+}
+article {
+  padding-left: 0.55em;
+}
 /* Modular style */
-
-#contact{
-  font-size: 18px;
-  padding: 15%;
-}
-
 ul {
   list-style-position: inside;
   padding-left: 0.55em;
@@ -39,109 +40,59 @@ ul {
   padding-bottom: 0.55em;
 }
 /* Layout style */
-html{
+html {
   background: #85C1E9;
-  background-size:cover;
-  background-size:auto;
+  background-size: cover, auto;
 }
 
-header{
+header {
   background: url(car.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  padding-bottom: 15%;
 }
 
 .box {
-    border: 5px solid #333;
-    overflow: auto;
-    background-color: #EBF5FB;
+  border: 0.225em solid #333;
+  overflow: auto;
+  background-color: #EBF5FB;
 }
 .imgs {
-    float: right;
+  float: right;
 }
 .imgs img {
-    display: block;
-    width:100%;
-}
-.maincontent {
-  font-size:125%;
-}
-.title {
-    font-weight: bold;
-    font-size: 200%;
-    padding: 9px;
-    background: #ccc;
-}
-
-#contact{
-  background: url(contact.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-size: 75%;
-  text-align:center;
-  background-position:center;
-}
-
-#contact background{
-  text-align:center;
-}
-
-/* Slideshow container */
-.slideshowbody{
-  max-width: 75%;
-  position:relative;
-  margin: auto;
-  padding-top:2em;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 20px;
-  position: absolute;
+  display: block;
   width: 100%;
 }
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 1vw;
-  width: 1vw;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 100%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.maincontent {
+  font-size: 125%;
+}
+.title {
+  font-weight: bold;
+  font-size: 200%;
+  padding: 0.35em;
+  background: #ccc;
 }
 
-#flip{
-  cursor:pointer;
+#brand {
+  cursor: pointer;
 }
 
-.activation, .dot:hover {
-  background-color: green;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
-  animation-name: fade;
-  animation-duration: 2s;
-}
-.fade img{
-  width:100%;
-}
-/*Transparent effect */
-@-webkit-keyframes fade {
-  from {opacity: 0.5} 
-  to {opacity: 1}
+@media screen and (min-width: 0.1em) and (max-width: 72em) {
+  h1 {
+    text-align: left;
+    padding-left: 0.55em;
+    font-size: 1.625em;
+  }
+  .maincontent {
+    font-size: 100%;
+  }
+  .title {
+    font-size: 150%;
+  }
 }
 
-@keyframes fade {
-  from {opacity: 0.5} 
-  to {opacity: 1}
-}
+
